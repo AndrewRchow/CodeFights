@@ -13,11 +13,13 @@
 // For n = 3, the output should be
 // shapeArea(n) = 13.
 
-var input = 3;
+var input = 4;
 
 function shapeArea(n) {
-	var area;
-	area = 1 + (4*(n-1);
+	var area = 1;
+	for (i=0; i<n; i++) {
+		area = area + (4*i)
+	}
 	console.log(area)
 	return area;
 }
