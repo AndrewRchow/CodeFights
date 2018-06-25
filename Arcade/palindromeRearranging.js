@@ -20,11 +20,10 @@ function palindromeRearranging(inputString) {
     	}
     }
     for(let letter in dictionary) {
-    	if(letter/2!=0){
+    	if(dictionary[letter]%2!=0){
     		oddCount++;
     	}
     }
-    return dictionary;
     return oddCount<2;
 }
 
