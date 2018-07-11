@@ -13,9 +13,9 @@ avoidObstacles(inputArray) = 4.
 */
 
 function avoidObstacles(inputArray) {
-	inputArray = inputArray.sort((a,b)=>{
+	inputArray = inputArray.sort(function(a,b) {
 		return a-b;
-	})
+	});
 	var avoided = false;
 	var maxVal = inputArray[inputArray.length-1];
 	for(var i = 2; i<maxVal; i++){
@@ -29,8 +29,7 @@ function avoidObstacles(inputArray) {
 		}
 		if(avoided) return i;
 	}
-	console.log(inputArray);
-	console.log(maxVal);
+
 	return maxVal + 1;
 }
 
