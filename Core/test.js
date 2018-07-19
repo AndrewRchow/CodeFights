@@ -76,10 +76,12 @@ console.log(fact(2));*/
 test=test.replace("b",2);
 console.log(test);*/
 
-var test = 2;
-function rando(){
-	var test = test * 2;
+function foo() {
+	var a;
+
+	console.log( a ); // undefined
+
+	a = 2;
 }
 
-rando();
-console.log(test);
+console.log(-3/0);
