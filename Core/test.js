@@ -76,12 +76,15 @@ console.log(fact(2));*/
 test=test.replace("b",2);
 console.log(test);*/
 
-function foo() {
-	var a;
+	function test(input, final) {
+		var pairValue;
+		for(i=0; i<input.length; i++){
+			pairValue = final-input[i];
+			if(input.indexOf(pairValue)!=-1){
+				console.log(i + "," + input.indexOf(pairValue));
 
-	console.log( a ); // undefined
+			}
+		}
+	}
 
-	a = 2;
-}
-
-console.log(-3/0);
+test([1,2,3,4],7);
