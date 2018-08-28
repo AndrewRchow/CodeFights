@@ -1,3 +1,5 @@
+/*Given two cells on the standard chess board, determine whether they have the same color or not.
+*/
 function chessBoardCellColor(cell1, cell2) {
     var letters = "ACEG";
     var numbers = "1357";
