@@ -5,6 +5,10 @@ let matrix = [[1, 0, 1, 0, 0],
               [1, 0, 1, 0, 1]];
 
 function islands(matrix) {
+  var check = []
+  for(var k = 0; k<matrix.length;k++){
+    check[k]=new Array(matrix.length);
+  }
   let count = 0;
 
   for(let i =0; i<matrix.length; i++){
